@@ -1,0 +1,26 @@
+[package]
+name = "tapir-thermal"
+description = "Keeps a GPU's junction temperature steady by pacing rocBLAS calls; a tapir preload library."
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[lib]
+name = "tapir_thermal"
+crate-type = ["cdylib"]
+
+[dependencies]
+tapir = { git = "https://github.com/adam-mcdaniel/tapir" }
+tapir-vocab = { git = "https://github.com/adam-mcdaniel/tapir" }
+
+[build-dependencies]
+tapir-gen = { git = "https://github.com/adam-mcdaniel/tapir" }
+tapir-vocab = { git = "https://github.com/adam-mcdaniel/tapir" }
+
+[profile.release]
+opt-level = 3
+debug = 1
+panic = "abort"
+
+# Not part of any outer workspace
+[workspace]

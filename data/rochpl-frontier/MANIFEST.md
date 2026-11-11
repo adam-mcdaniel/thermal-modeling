@@ -1,0 +1,1 @@
+/Users/hom/Documents/ampere/examples/hpl-trace/MANIFEST.md

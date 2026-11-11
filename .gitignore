@@ -1,0 +1,21 @@
+# Build outputs: rebuilt by gpu/reproduce.sh and gpu/runtime/build.sh
+__pycache__/
+*.o
+*.so
+target/
+/fit_cooling_model
+/predict_cooling
+/rochpl_gpu/predict_gpu
+/cabinet/fit_cooling_model
+/cabinet/rochpl_gpu/predict_gpu
+/gpu/fit_gpu
+/gpu/predict_gpu
+/gpu/replay_gpu
+/gpu/runtime/test_core
+/gpu/runtime/thermal_stress
+/gpu/samples/*/predict_gpu
+/gpu/samples/*/predict_junction
+/gpu/samples/*/replay_gpu
+
+# Too big for GitHub (287 MB): copy to other machines separately. Read by gpu/fit_water.py and the long-run notebook steps.
+/cabinet_power_recon_gpu_energy_1ms.csv

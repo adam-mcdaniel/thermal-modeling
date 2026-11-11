@@ -1,0 +1,3 @@
+# As in tapir: the system gcc driver finds the system libc on Frontier login nodes, where rust-lld can't.
+[target.x86_64-unknown-linux-gnu]
+linker = "gcc"
